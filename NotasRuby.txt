@@ -1,0 +1,18 @@
+Sobre a Linguagem:
+  - Inferencia de Tipos: onde o valor atribuido a uma variavel é reconhecido pelo interpretador.
+  - Tipagem Forte e Dinamica: em php na realização de uma operação de numero inteiro com string (teste = 10; teste01 = "2") é realizado o calculo
+    ja em ruby é mostrado um erro. Mas no ruby pode estar atribuindo tipos diferentes em uma variavel ja atribuida uma outro tipo.
+  - O Ruby é uma linguagem interpretada, não necessita de um processo de compilação.
+  -  O Ruby Trabalha com Classes Abertas, o que signifca que voce pode instanciar uma classe e modificar do seu jeito.
+      EX:
+          class String
+            def plural
+              "#{self}s"
+            end
+          end
+
+          puts "caneta".plural
+  - Cases de sucesso Rails: Shopfy, MailChimp, Grupon; os dois primeiros sao SaaS
+
+  Ruby Metodos:
+    - .class: retorna o tipo da variavel
