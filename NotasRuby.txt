@@ -13,6 +13,17 @@ Sobre a Linguagem:
 
           puts "caneta".plural
   - Cases de sucesso Rails: Shopfy, MailChimp, Grupon; os dois primeiros sao SaaS
+  - Pode haver a colocação do caracter %_ para separa pontos de milhar nao alterando o tipo da variavel. (serve basicamente para uma melhor legibilidade)
+  - a separação de casas decimais é feita com (.).
+  - Quando ha necessidade da concatenação de string é feita a interpolação #{nome_variavel}. So e possivel fazer a interpolação com aspas duplas.
+  - Diferenças entre aspas duplas e aspas simples, é que durante o uso de aspas duplas o iterpretador realiza a analise lexica para verificação se a uma interpolação diferente do uso das aspas simples.
+  - O Ruby pode omitir os parenteses da estrutura de condição if o que é definido com o termo syntax sugar com o intuito de deixa la mais legivel.
+    se a estrutura if for unica pode-se deixa la mais enxuta. [ex: puts nome if idade > 18].
+  - Para representar algum valor tido como vazio na linguagem ruby utilizamos o nil, palavra reservada que pode estar sendo atribuido a uma variavel.
+  - As variaveis quando possue o valor nil assume automaticamente o valor true quando presente em uma condição if ou unless.
+
 
   Ruby Metodos:
-    - .class: retorna o tipo da variavel
+    - .class: retorna o tipo da variavel.
+    - .nill?: verifica se variavel é nula, retorna true se sim.
+    - (nao é necessariamente um metodo) if not ou unless

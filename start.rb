@@ -1,9 +1,4 @@
 #coding: utf-8
 
-class String
-  def plural
-    "#{self}s"
-  end
-end
-
-puts "caneta".plural
+nome = nill
+puts "Seja Bem Vindo(a) #{nome}" if not nome.nil?
