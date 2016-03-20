@@ -1,11 +1,20 @@
-string_especial = "Isso é \"Normal\" e \'Util\' No mundo Ruby"
+class Livro
+=begin
+  nome = "Livro Ruby"
+  isbn = "342-65675756-1"
+  num_paginas = 245
+  preco = 89.90
+  desconto = 0.1
+=end
 
-string_especial = %{Isso é "Normal" e {Util} no mundo Ruby} #%<>, %[]
+  def initialize(nome, isbn = "1", numero_pagina)
+    puts "Autor: #{nome}, ISBN: #{isbn}, Pág.:#{numero_pagina}"
+  end
 
-string_especial = %{Isso é "Normal" e 'Util'
-                    no mundo Ruy} #Escape com quebra de linha
+  def preco_com_desconto(preco, desconto)
+    preco - (preco * desconto)
+  end
 
-numero = 10
-string_especial = %{Isso é "Normal" e 'Util' no mundo Ruy #{numero}} # Com Interpolação
+end
 
-puts string_especial
+web_design = Livro.new "Otavio", 240

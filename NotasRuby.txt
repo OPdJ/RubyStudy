@@ -46,7 +46,35 @@ Sobre a Linguagem:
     ]
   - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"
     (podem ser utilizados deste tipo), pode haver o escape de string com a interpolação.
+    [Classe
+      - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
+      -  criar uma instacia de um objeto em Ruby
+        (nome_variavel) = (nome_objeto).new
+      - Para passar as informações referente a instância é criado o metodo initialize na classe que pode ser omitido o parenteses
+        ou nao quando estver sendo instânciado. Quando criado uma classe é criado por default o metodo initialize
+      - A aridade é um fator essencial no Ruby, a quantidade de parametros tem que ser igual a do metodo quando criado.
+      - O Ruby não suporta a sobrecarga, isso por que o interpretador sempre considera o ultimo metodo (quando ha sobrecarga)
+        definido na classe.
+        {ex NAO FUNCIONA
+          classe Livro
+            def initialize(nome, isbn, numero_paginas)
+            end
 
+            def initialize(nome, numero_paginas)
+            end
+          end
+        }
+        #Para isso pe feito o uso de argumentos padrao
+        {ex FUNCIONA
+          classe Livro
+            def initialize(nome, isbn = "1", numero_paginas)
+            end
+          end
+
+          web_responsivo = Livro.new "Otavio", 240 # ORuby consegueentender que o valor atribuido sera em numero_pagina.
+        }
+      - O Ruby possui 3 tipos de argumentos: Obrigatorio, padrao e opcional(Mais adiante)
+    ]
 
   Ruby Metodos:
     - .class: retorna o tipo da variavel.
