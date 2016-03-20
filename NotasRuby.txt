@@ -1,6 +1,7 @@
 Credeciais Problema Atom e Git-Plus:
   - https://github.com/akonwi/git-plus/issues/224
   - https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+  - Teste
 
 Sobre a Linguagem:
   - Inferencia de Tipos: onde o valor atribuido a uma variavel é reconhecido pelo interpretador.
