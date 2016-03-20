@@ -20,7 +20,26 @@ Sobre a Linguagem:
   - O Ruby pode omitir os parenteses da estrutura de condição if o que é definido com o termo syntax sugar com o intuito de deixa la mais legivel.
     se a estrutura if for unica pode-se deixa la mais enxuta. [ex: puts nome if idade > 18].
   - Para representar algum valor tido como vazio na linguagem ruby utilizamos o nil, palavra reservada que pode estar sendo atribuido a uma variavel.
-  - As variaveis quando possue o valor nil assume automaticamente o valor true quando presente em uma condição if ou unless.
+  - As variaveis quando possuem o valor nil assume automaticamente o valor true quando presente em uma condição if ou unless.
+  - Loops em Ruby:
+    [ ex FOR:
+    for numero in (1..100)
+      puts "Numero #{numero}"
+    end],
+    [ex WHILE:
+    numero = 0
+    while nome <= 100
+      puts "Numero: #{numero}"
+      numero++
+    end {termina seu loop quando a condição é falsa}],
+    [ex UNTIL:
+    numero = 0
+    until numero == 100
+      puts "Numero: #{numero}"
+      numero += 1
+    end {termina seu loop quando a condição é verdadeira}
+    ]
+  - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"(podem ser utilizados deste tipo) 
 
 
   Ruby Metodos:
