@@ -1,3 +1,7 @@
+Credeciais Problema Atom e Git-Plus:
+  - https://github.com/akonwi/git-plus/issues/224
+  - https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+
 Sobre a Linguagem:
   - Inferencia de Tipos: onde o valor atribuido a uma variavel é reconhecido pelo interpretador.
   - Tipagem Forte e Dinamica: em php na realização de uma operação de numero inteiro com string (teste = 10; teste01 = "2") é realizado o calculo
@@ -39,7 +43,7 @@ Sobre a Linguagem:
       numero += 1
     end {termina seu loop quando a condição é verdadeira}
     ]
-  - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"(podem ser utilizados deste tipo) 
+  - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"(podem ser utilizados deste tipo)
 
 
   Ruby Metodos:
