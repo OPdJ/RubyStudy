@@ -1,4 +1,5 @@
-#coding: utf-8
+string_especial = "Isso é \"Normal\" e \'Util\' No mundo Ruby"
 
-nome = nill
-puts "Seja Bem Vindo(a) #{nome}" if not nome.nil?
+string_especial = %{Isso é "Normal" e 'Util' no mundo Ruby} #%<>, %[], %~~
+
+puts string_especial
