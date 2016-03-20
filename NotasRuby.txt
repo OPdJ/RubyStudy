@@ -44,7 +44,8 @@ Sobre a Linguagem:
       numero += 1
     end {termina seu loop quando a condição é verdadeira}
     ]
-  - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"(podem ser utilizados deste tipo)
+  - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"
+    (podem ser utilizados deste tipo), pode haver o escape de string com a interpolação.
 
 
   Ruby Metodos:
