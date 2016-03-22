@@ -74,9 +74,16 @@ Sobre a Linguagem:
           web_responsivo = Livro.new "Otavio", 240 # ORuby consegueentender que o valor atribuido sera em numero_pagina.
         }
       - O Ruby possui 3 tipos de argumentos: Obrigatorio, padrao e opcional(Mais adiante)
+      - Carregando Arquivo Ruby:
+        utilizando o metodo da classe kernel 'require' junto com o nome do arquivo .rb, se o parametro nao for o caminho absoluto
+        do arquivo .rb, entao, sera feito a busca em diretorios definidos na contante $LOAD_PATH(local onde se encontra os arquivos rb do core do Ruby)
+        duas formas podem ser usadas para carregar:
+          * adicionar a constante $LOAD_PATH << "caminho relativo do projeto 'loja_virtual/lib'" e quando for carregado ficara require 'livro'
+          * a segunda é tida como a melhor opção, é utilizar o caminho absoluto fazendo uso do metodo expand_path da classe File
     ]
 
   Ruby Metodos:
     - .class: retorna o tipo da variavel.
     - .nill?: verifica se variavel é nula, retorna true se sim.
-    - (nao é necessariamente um metodo) if not ou unless
+    - (I Know! -.-") if not ou unless
+    - .expand_path("caminho_relativo") # Metodo da Classe File
