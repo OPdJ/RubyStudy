@@ -48,6 +48,7 @@ Sobre a Linguagem:
     ]
   - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"
     (podem ser utilizados deste tipo), pode haver o escape de string com a interpolação.
+  - O retorno (reurn) de um metodo em Ruby sempre será a ultima instrução.
     [Classe
       - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
       -  criar uma instacia de um objeto em Ruby
@@ -82,6 +83,43 @@ Sobre a Linguagem:
         duas formas podem ser usadas para carregar:
           * adicionar a constante $LOAD_PATH << "caminho relativo do projeto 'loja_virtual/lib'" e quando for carregado ficara require 'livro'
           * a segunda é tida como a melhor opção, é utilizar o caminho absoluto fazendo uso do metodo expand_path da classe File
+      - Os parametros utilizados no initialize quando utilizado sem "@" informamos que sao variaveis locais, para que seja utilizado no objeto criado faz a utilização do "@"
+        {ex:
+                  def initialize (nome, cpf)
+                    @nome = nome
+                    @cpf = cpf
+                  end
+        }
+      - diferenças entre p e puts para imprimir o valor de um objeto, com o puts estamos nada mais que dizendo ao interpretador que queremos que um determinado valor do objeto seja
+        impresso, ja que ele faz o uso do metodo .to_s (mais a seguir sobre este metodo) "variavel.to_s", enquanto o p é utilizado como debug em que ele faz o uso do metodo inspect
+        fazendo com que seja impresso as  variaveis junto com o valor atribuido.
+      - Como uma boa pratica sempre realizar a sobrescrita no metodo to_s para retornar os valores condizentes no objeto instanciado.
+      - As varaveis de instancia sao sempre privadas e so podem ser acessadas pela propria classe, para que seja visivel nas demais faz-se a necessidade de se criar um  metodo
+        com o nome da variavel, para que possa ser atribuido um valor na variavel de instancia é utilizada no Ruby de uma forma legivel:
+        {ex:
+          def preco
+            @preco
+          end
+
+          def preco=(preco)
+            @preco = preco
+          end
+        }
+        quando for relizada uma atribuição de um valor a esta variavel podemos fazer da seguinte forma:
+        {ex:
+          web_design.preco=(100) ou
+          web_design.preco = 100 # desta foma a legibilidae é melhor.
+        }
+        podemos mlhorar ainda mais o processo de atribuição de valores a uma variavel de instancian utilizando a LRuby que seria fazer uso dos metodos
+        attr_writer :symbol e attr_reader :symbol (cada simbol representa a variavel de instancia que deseja realizar a leitura e a escrita)
+        {ex:
+          attr_writer :preco
+          attr_reader :preco
+        }
+        caso haja a necessidade de criar os dois metodos attr_ para leitura e gravação existe um metodo mais simples que faz da utilização do metodo attr_accessor :symbol
+        {ex:
+          attr_accessor :preco
+        }
     ]
 
   Ruby Metodos:
