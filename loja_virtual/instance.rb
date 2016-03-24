@@ -5,3 +5,7 @@ web_design = Livro.new "Otavio", "21652165", 240, 89.90
 web_design.preco = 100
 
 puts web_design.preco
+
+nome = "Otavio"
+
+puts nome if nome.object_id == nome.object_id

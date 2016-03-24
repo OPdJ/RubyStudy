@@ -3,7 +3,11 @@ Credeciais Problema Atom e Git-Plus:
   - https://github.com/Microsoft/Git-Credential-Manager-for-Windows
   - Teste
 Git commands:
-  - git clean -df > Utilizado quando criou novos arquivos e que deletalos sem realizar o commit.
+  - git clean -df > Utilizado quando criou novos arquivos e quer deleta-los sem realizar o commit.
+
+Pesquisas Feitas:
+ - Sobre Strings imutaveis:
+  http://www.marcioalthmann.net/2011/02/entendendo-strings/
 
 Sobre a Linguagem:
   - Inferencia de Tipos: onde o valor atribuido a uma variavel é reconhecido pelo interpretador.
@@ -48,7 +52,10 @@ Sobre a Linguagem:
     ]
   - Notações de escape Ruby, podem ser feitas com "\'" ou com o escape semelhante ao perl "%{}, [], <>, ~~"
     (podem ser utilizados deste tipo), pode haver o escape de string com a interpolação.
-  - O retorno (reurn) de um metodo em Ruby sempre será a ultima instrução.
+  - O retorno (return) de um metodo em Ruby sempre será a ultima instrução.
+  - simbolos no Ruby são tido como strings o qual seu endereço na memoria nao é modificado imutavel, quase sempre sendo
+    utilizado como um identificador, diferente d string que por mais que seja imutavel ha sempre a criação de um novo
+    espaço na memoria.
     [Classe
       - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
       -  criar uma instacia de um objeto em Ruby
@@ -127,3 +134,9 @@ Sobre a Linguagem:
     - .nill?: verifica se variavel é nula, retorna true se sim.
     - (I Know! -.-") if not ou unless
     - .expand_path("caminho_relativo") # Metodo da Classe File
+    - .object_id: retorna um identificador do objeto na memoria
+    - instance_variable_get/set: instancia uma variavel de instancia da classe, no set devemos passar
+      o nome da variavel e o valor
+      {ex:
+      instance_variable_set "@preco", 90      
+      }
