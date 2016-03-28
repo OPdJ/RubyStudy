@@ -1,13 +1,14 @@
 class Livro
 
-  attr_writer :preco
-  attr_reader :preco
+  attr_accessor :preco
+  attr_reader :categoria
 
-  def initialize(autor, isbn = "1", numero_pagina, preco)
+  def initialize(autor, isbn = "1", numero_pagina, preco, categoria)
     @autor = autor
     @isbn = isbn
     @numero_pagina = numero_pagina
     @preco = preco
+    @categoria = categoria
   end
 
 =begin
@@ -22,7 +23,7 @@ class Livro
 =end
 
   def to_s
-    "Autor: #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_pagina}"
+    "Autor: #{@autor}, ISBN: #{@isbn}, Páginas: #{@numero_pagina}, Categoria: #{@categoria}"
   end
 
 end

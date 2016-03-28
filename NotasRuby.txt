@@ -56,6 +56,11 @@ Sobre a Linguagem:
   - simbolos no Ruby são tido como strings o qual seu endereço na memoria nao é modificado imutavel, quase sempre sendo
     utilizado como um identificador, diferente d string que por mais que seja imutavel ha sempre a criação de um novo
     espaço na memoria.
+  - criando um  hash, dessa forma temos um controle melhor sobre os elementos nele contido passando um
+    key(valor identificador para aquele elemento e seu valor) e valor
+    {ex:
+      hash = { "key"=> value}
+    }
     [Classe
       - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
       -  criar uma instacia de um objeto em Ruby
@@ -127,6 +132,12 @@ Sobre a Linguagem:
         {ex:
           attr_accessor :preco
         }
+      - Acessando cada valor em um objeto, utilizando o laço de iteração for para percorrer os elementos do array
+        {ex:
+          for(nome_variavel in nome_objeto) do
+            puts nome_variavel.nome_elemento_objeto
+          end
+        }
     ]
 
   Ruby Metodos:
@@ -138,5 +149,19 @@ Sobre a Linguagem:
     - instance_variable_get/set: instancia uma variavel de instancia da classe, no set devemos passar
       o nome da variavel e o valor
       {ex:
-      instance_variable_set "@preco", 90      
+      instance_variable_set "@preco", 90
+      }
+    - .values: utilizado quando queremos retorna todos os valores de um hash, este metodo retorna diferentes arrays
+      {ex:
+        hash = {teste: [teste_e_design], sql: [sql_metadata]}
+        p hash.values
+        retorno => [Autor: "Otavio", ISBN: "1234", Pág.: 240],
+                    [Autor: "Otavio", ISBN: "1234", Pág.: 240]
+      }
+    - .flatten: retorna um unico array
+      {ex:
+        hash = {teste: [teste_e_design], sql: [sql_metadata]}
+        p hash.values.flatten
+        retorno => [Autor: "Otavio", ISBN: "1234", Pág.: 240],
+                    [Autor: "Otavio", ISBN: "1234", Pág.: 240]
       }
