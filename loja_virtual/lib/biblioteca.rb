@@ -2,7 +2,7 @@ class Biblioteca
 
 # Primeira opção para retorno de elementos do objeto utilizando hash
 def initialize
-  @livros = {}
+  @livros = {} # ou Hash.new
 end
 
 def adicionar(livro)

@@ -1,3 +1,5 @@
-require File.expand_path("loja_virtual/lib/livro")
+nome = nil
 
-we_design = Livro.new "OtÁvio", 240
+nome ||= "Otavio"
+
+puts nome

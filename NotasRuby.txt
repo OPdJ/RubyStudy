@@ -4,6 +4,7 @@ Credeciais Problema Atom e Git-Plus:
   - Teste
 Git commands:
   - git clean -df > Utilizado quando criou novos arquivos e quer deleta-los sem realizar o commit.
+  - git checkout -- * > Utilizado quando quer retornar ao estado original antes de realizar alterações localmente.
 
 Pesquisas Feitas:
  - Sobre Strings imutaveis:
@@ -57,9 +58,15 @@ Sobre a Linguagem:
     utilizado como um identificador, diferente d string que por mais que seja imutavel ha sempre a criação de um novo
     espaço na memoria.
   - criando um  hash, dessa forma temos um controle melhor sobre os elementos nele contido passando um
-    key(valor identificador para aquele elemento e seu valor) e valor
+    key(valor identificador para aquele elemento normalmente é utilizado sum symbol e seu valor) e valor
     {ex:
       hash = { "key"=> value}
+
+      hash = {:teste => [teste_automatizado]} # aqui estamos informado a key e um objeto
+      ou
+      hash = {teste: [teste_automatizado]} # forma introduzida a partir do ruby 1.9
+
+      p hash[:teste] #A forma de acesso ao hash é o mesmo
     }
     [Classe
       - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
@@ -139,6 +146,16 @@ Sobre a Linguagem:
           end
         }
     ]
+
+Ruby Operador:
+    - ||= : Utilizado para atribuir um valor a uma variavel somente se ela for null, uma outra alternativa é o unless mais este operador veio para facilitar.
+      {ex:
+        idade = nil
+        idade ||= 27
+        idade ||= 35
+
+        p idade # 27
+      }
 
   Ruby Metodos:
     - .class: retorna o tipo da variavel.
