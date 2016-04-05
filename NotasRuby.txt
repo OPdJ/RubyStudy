@@ -177,8 +177,8 @@ Ruby Operador:
       }
     - .flatten: retorna um unico array
       {ex:
-        hash = {teste: [teste_e_design], sql: [sql_metadata]}
+        hash = {teste: [teste_e_design], sql: [sql_metadata]} # Forma de atribuir valor a um hash apartir da versao 1.9
         p hash.values.flatten
-        retorno => [Autor: "Otavio", ISBN: "1234", Pág.: 240],
-                    [Autor: "Otavio", ISBN: "1234", Pág.: 240]
+        retorno => [Autor: "Otavio", ISBN: "1234", Pág.: 240,
+                    Autor: "Otavio", ISBN: "1234", Pág.: 240]
       }
