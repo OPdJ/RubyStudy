@@ -1,0 +1,25 @@
+
+[1mFrom:[0m C:/Ruby22/lib/ruby/gems/2.2.0/gems/pry-0.10.3/lib/pry/core_extensions.rb @ line 23:
+[1mOwner:[0m Object
+[1mVisibility:[0m public
+[1mSignature:[0m pry(object=?, hash=?)
+[1mNumber of lines:[0m 18
+
+Start a Pry REPL on self.
+
+If `[1;36mself[0m` is a Binding then that will be used to evaluate expressions;
+otherwise a new binding will be created.
+
+[33mparam[0m [Object] object  the object or binding to pry
+                        (__deprecated__, use `object.pry`)
+[33mparam[0m [Hash] hash  the options hash
+[33mexample[0m With a binding
+   binding.pry
+[33mexample[0m On any object
+  [31m[1;31m"[0m[31mdummy[1;31m"[0m[31m[0m.pry
+[33mexample[0m With options
+  [32mdef[0m [1;34mmy_method[0m
+    binding.pry [33m:quiet[0m => [1;36mtrue[0m
+  [32mend[0m
+  my_method()
+@see Pry.start

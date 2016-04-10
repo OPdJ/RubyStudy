@@ -68,6 +68,23 @@ Sobre a Linguagem:
 
       p hash[:teste] #A forma de acesso ao hash é o mesmo
     }
+    - Utilizamos a Classe Set do Ruby quando qeremos que os valores contidos não se repitam.
+    {
+      ex:
+
+      require 'set'
+
+      numeros = Set.new [1, 2, 3, 4, 2]
+
+      for numero in numeros do
+        p numero
+      end
+      # Resultado:
+      => 1
+      => 2
+      => 3
+      => 4
+    }
     [Classe
       - "Unidar dados e a Manipulação dos mesmo, encapsulando o acesso (Conceito OO)"
       -  criar uma instacia de um objeto em Ruby
@@ -182,3 +199,5 @@ Ruby Operador:
         retorno => [Autor: "Otavio", ISBN: "1234", Pág.: 240,
                     Autor: "Otavio", ISBN: "1234", Pág.: 240]
       }
+    - .eql?: Pode ser feita a sobrescrita para a verificação dos valores.
+    - .equal?: Não é aconsehlavel realizar a sobrescrita.
